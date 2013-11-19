@@ -141,3 +141,28 @@ let g:syntastic_check_on_open=1
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+" innohub additions
+" Encoding
+set encoding=utf-8
+
+" Colors
+set background=dark
+colorscheme base16-default
+
+" ZoomWin
+nmap <leader>z <c-w>o
+
+" NERD Tree
+autocmd vimenter * if !argc() | NERDTree | endif
+nmap <leader>n :NERDTreeToggle<CR>
+let NERDTreeHighlightCursorline=1
+let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
+
+" Search
+set hlsearch
+set ignorecase
+set smartcase
+
+" Window Options
+set ruler
