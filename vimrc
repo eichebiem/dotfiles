@@ -1,3 +1,5 @@
+" Make sure system reads this as utf-8
+scriptencoding utf-8
 " Leader
 let mapleader = " "
 
