@@ -2,6 +2,10 @@
   default = current
 [color]
   ui = auto
+  branch = auto
+  diff = auto
+  status = auto
+  interactive = auto
 [alias]
   aa = add --all
   ap = add --patch
@@ -14,6 +18,11 @@
   pr = !hub pull-request
   st = status
   up = !git fetch origin && git rebase origin/master
+  br = branch
+  hist = log --pretty=format:\"%h %Cblue%ad %Cred[%an]%Creset | %s%Cgreen%d\" --graph --date=short --decorate
+  h = log --pretty=format:\"%h %Cblue%ad %Cred[%an]%Creset | %s%Cgreen%d\" --graph --date=short --decorate
+  type = cat-file -t
+  dump = cat-file -p
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
@@ -23,3 +32,5 @@
   path = .gitconfig.local
 [commit]
   template = ~/.gitmessage
+[push]
+  default = simple
