@@ -72,3 +72,6 @@ unsetopt nomatch
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+# tmuxinator
+[[ -f ~/.bin.local/tmuxinator.zsh ]] && source ~/.bin.local/tmuxinator.zsh
