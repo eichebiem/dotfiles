@@ -54,6 +54,9 @@ augroup vimrcEx
 
   " Automatically wrap at 80 characters for Markdown
   autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+
+  " Set syntax highlighting for HAML Coffeescript
+  autocmd BufRead,BufNewFile *.hamlc set ft=haml
 augroup END
 
 " Softtabs, 2 spaces
@@ -170,3 +173,6 @@ set smartcase
 
 " Window Options
 set ruler
+
+"let g:rspec_command = 'call Send_to_Tmux("spring rspec {spec}\n")'
+let g:rspec_command = '!echo spring rspec {spec} && spring rspec {spec}'

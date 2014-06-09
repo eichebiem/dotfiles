@@ -34,5 +34,8 @@ alias rk="rake"
 alias s="rspec"
 alias z="zeus"
 
+# Remove autocrrect
+alias spring='nocorrect spring'
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
