@@ -143,11 +143,6 @@ nnoremap <C-l> <C-w>l
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
 
-" Local config
-if filereadable($HOME . "/.vimrc.local")
-  source ~/.vimrc.local
-endif
-
 " innohub additions
 " Encoding
 set encoding=utf-8
@@ -174,5 +169,7 @@ set smartcase
 " Window Options
 set ruler
 
-"let g:rspec_command = 'call Send_to_Tmux("spring rspec {spec}\n")'
-let g:rspec_command = '!echo spring rspec {spec} && spring rspec {spec}'
+" Local config
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
+endif
