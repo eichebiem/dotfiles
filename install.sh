@@ -14,5 +14,12 @@ for name in *; do
   fi
 done
 
+echo "Creating .tmuxinator"
+mkdir -p ~/.tmuxinator/
+
+echo "Creating .config"
+mkdir -p ~/.config/
+git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim -u ~/.vimrc.bundles +BundleInstall +qa
