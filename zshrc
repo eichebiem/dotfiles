@@ -70,8 +70,8 @@ unsetopt nomatch
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
-# Local config
-[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
-
 # tmuxinator
 [[ -f ~/.bin.local/tmuxinator.zsh ]] && source ~/.bin.local/tmuxinator.zsh
+
+# Local config
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
