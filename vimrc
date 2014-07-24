@@ -164,6 +164,12 @@ set smartcase
 " Window Options
 set ruler
 
+" Add Jbuilder syntax highlighting
+au BufNewFile,BufRead *.json.jbuilder set ft=ruby
+
+" Add Ruby syntax highlighting for axlsx
+au BufRead,BufNewFile *.axlsx set filetype=ruby
+
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
