@@ -44,7 +44,8 @@ export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
 setopt histignoredups
 
 # keep TONS of history
-export HISTSIZE=4096
+export SAVEHIST=4096
+export HISTFILE=~/.zsh_history
 
 # look for ey config in project dirs
 export EYRC=./.eyrc
