@@ -37,5 +37,8 @@ alias z="zeus"
 # Remove autocrrect
 alias spring='nocorrect spring'
 
+alias tmux='tmux -2'
+alias tmuxc='tmux -2'
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
