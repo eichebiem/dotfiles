@@ -32,6 +32,7 @@ Bundle 'vim-scripts/CSApprox'
 Bundle 'vim-scripts/ZoomWin'
 Bundle 'chriskempson/base16-vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'jgdavey/tslime.vim'
 " innohub additions end
 
 if filereadable(expand("~/.vimrc.bundles.local"))
