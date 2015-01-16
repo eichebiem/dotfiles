@@ -174,14 +174,14 @@ au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 " Add Ruby syntax highlighting for axlsx
 au BufRead,BufNewFile *.axlsx set filetype=ruby
 
-" Local config
-if filereadable($HOME . "/.vimrc.local")
-  source ~/.vimrc.local
-endif
-
 " Ruboto
 map <leader>bc :call Send_to_Tmux("rubocop\n")<CR>
 map <leader>bo :call Send_to_Tmux("rubocop ". expand('%:p') ."\n")<CR>
 
 " HAML Linter
 let g:syntastic_haml_checkers = ['haml_lint']
+
+" Local config
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
+endif
