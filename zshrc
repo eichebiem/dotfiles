@@ -69,9 +69,9 @@ setopt EXTENDED_GLOB
 unsetopt nomatch
 
 # Base16 Shell
-BASE16_SCHEME="default"
-BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
-[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
+BASE16_SCHEME="default-dark"
+BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-$BASE16_SCHEME.sh"
+[[ -s $BASE16_SHELL ]] && sh $BASE16_SHELL
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases

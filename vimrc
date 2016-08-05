@@ -149,7 +149,7 @@ set encoding=utf-8
 " Colors
 let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
-colorscheme base16-default
+colorscheme base16-default-dark
 
 " ZoomWin
 nmap <leader>z <c-w>o
