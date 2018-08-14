@@ -46,8 +46,8 @@ augroup vimrcEx
     \ endif
 
   " Cucumber navigation commands
-  autocmd User Rails Rnavcommand step features/step_definitions -glob=**/* -suffix=_steps.rb
-  autocmd User Rails Rnavcommand config config -glob=**/* -suffix=.rb -default=routes
+  "autocmd User Rails Rnavcommand step features/step_definitions -glob=**/* -suffix=_steps.rb
+  "autocmd User Rails Rnavcommand config config -glob=**/* -suffix=.rb -default=routes
 
   " Set syntax highlighting for specific file types
   autocmd BufRead,BufNewFile Appraisals set filetype=ruby
@@ -145,10 +145,6 @@ let g:syntastic_check_on_open=1
 " innohub additions
 " Encoding
 set encoding=utf-8
-
-" Colors
-set background=dark
-colorscheme base16-default-dark
 
 " ZoomWin
 nmap <leader>z <c-w>o
